@@ -15,5 +15,10 @@
   <%= @user.image_url %>
 </p>
 
+<p>
+  <strong>Address:</strong>
+  <%= @user.address %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
