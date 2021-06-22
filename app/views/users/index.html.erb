@@ -4,15 +4,18 @@
 
 <div class="container-fluid">
 <!--   <h1 align="center">Listing users</h1>
- -->
+ --><div class="something">
     <% @users.each do |users| %>
-      <div class="col-sm"><a href="#"><h1><%= users.name%></h1></a>
+    <div class="row">
+      <div class="col-sm something1"><a href="#"><h1><%= users.name%></h1></a>
           <%= image_tag(users.image_url, class: "img-fluid")unless users.image_url.nil? %>
           <p><%= users.description%></p>
 
           <strong>$ 42</strong>
       </div><!-- /col -->
-    <% end %>    
+    </div>
+    <% end %>   
+    </div> 
 </div>
 
 
