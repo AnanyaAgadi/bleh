@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # GET /users or /users.json
   def index
     @users = User.all
-    
+
   end
 
   # GET /users/1 or /users/1.json
@@ -23,7 +23,7 @@ class UsersController < ApplicationController
   # POST /users or /users.json
   def create
     @user = User.new(user_params)
-
+  
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: "User was successfully created." }
@@ -56,6 +56,8 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+ 
 
   private
     # Use callbacks to share common setup or constraints between actions.
