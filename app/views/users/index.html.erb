@@ -5,17 +5,13 @@
 <div class="container-fluid">
 <!--   <h1 align="center">Listing users</h1>
  -->
-    <% @users.each_slice(3) do |users| %>
-          <div class="row">
-            <% users.each do |user| %>
-                <div class="col-sm"><a href="#"><h1>Bike 1</h1></a>
-                    <%= image_tag(user.image_url, class: "img-fluid")unless user.image_url.nil? %>
-                    <p>Pretty cool bike</p>
+    <% @users.each do |users| %>
+      <div class="col-sm"><a href="#"><h1><%= users.name%></h1></a>
+          <%= image_tag(users.image_url, class: "img-fluid")unless users.image_url.nil? %>
+          <p><%= users.description%></p>
 
-                    <strong>$ 42</strong>
-                </div><!-- /col -->
-            <% end %>
-          </div><!--row -->
+          <strong>$ 42</strong>
+      </div><!-- /col -->
     <% end %>    
 </div>
 
