@@ -7,3 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.create(name: "seed-gen user", description: "I also
 created this user without using the HTML form!")
+
+User.create(name: "seed-gen user2", description: "I also
+created this user without using the HTML form!")
+
+User.create(name: "seed-gen user3", description: "I also
+created this user without using the HTML form!")
+
+User.create(name: "seed-gen user4", description: "
+created this user without using the HTML form!")
