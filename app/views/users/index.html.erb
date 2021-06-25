@@ -2,15 +2,13 @@
 
 <h1>Users</h1>
 
-
-
 <div class="container-fluid">
-<!--   <h1 align="center">Listing users</h1>
- --><div class="something">
+<div class="something">
     <% @users.each do |users| %>
     <div class="row">
       <div class="col-sm something1"><a href="#"><h1><%= users.name%></h1></a>
           <%= image_tag(users.image_url, class: "img-fluid")unless users.image_url.nil? %>
+          <%= user.name%>
           <p><%= users.description%></p>
 
           <strong>$ 42</strong>
